@@ -1,0 +1,37 @@
+************************************************
+
+Deploy process
+
+1................................................
+keyPair create:
+solana-keygen new -o <Keypair file>
+
+2................................................
+Set network:
+solana config set --keypair <Keypair file>
+
+3................................................
+Set wallet for the devnet
+solana config set --url devnet
+
+4................................................
+Create Token:
+metaboss create fungible -d <Decimals> -m <Metadata file>
+
+5................................................
+Create Token Account:
+spl-token create-account <Token Account>
+
+6................................................
+Token Mint:
+spl-token mint <Mint Account> <Mint Amount>
+
+7................................................
+Disable mints:
+spl-token authorize <Mint Address> mint --disable
+
+9...............................................
+Disable freeze:
+spl-token authorize <Mint Address> freeze --disable
+
+************************************************
