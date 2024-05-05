@@ -28,7 +28,7 @@ spl-token create-account <Mint address>
 
 7................................................
 Token Mint:
-spl-token mint <Mint Account> <Mint Amount>
+spl-token mint <Mint Address> <Mint Amount>
 
 8................................................
 Disable mints:
