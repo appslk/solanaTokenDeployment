@@ -24,7 +24,7 @@ metaboss create fungible -d <Decimals> -m <Metadata file>
 
 6................................................
 Create Token Account:
-spl-token create-account <Token Account>
+spl-token create-account <Mint address>
 
 7................................................
 Token Mint:
